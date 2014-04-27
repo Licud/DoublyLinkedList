@@ -7,8 +7,11 @@ class Node
 {	public:
 		Node(string, Node*, Node*);
 		const string getData();
-		const Node* getNext();
-		const Node* getPrevious();	
+		Node* getNext();
+		Node* getPrevious();	
+		void setPrevious(Node*);
+		void setNext(Node*);
+		void setData(string &);
 	private:
 		string data;
 		Node *next;
